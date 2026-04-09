@@ -1,0 +1,281 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    color: #2E4F21;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden ;
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-dark-green {
+    background: #2E4F21;
+}
+
+/* hero start */
+.navbar {
+    padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #2E4F21;
+}
+
+a:hover {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.btn-primary-custom {
+    background-color: #2E4F21;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 14px 10px 14px;
+}
+
+.btn-primary-custom:hover {
+    background: #d7e7cf;
+    color: #416532;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-4px);
+    /* Subtle "lift" effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary-custom {
+    background-color: #c4cdc1;
+    color: #1a4d2e !important;
+    /* Matches your brand green */
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem;
+}
+
+.btn-secondary-custom:hover {
+    cursor: pointer;
+    background-color: #1a4d2e !important;
+    /* Swaps to green background */
+    color: #ffffff !important;
+    /* Swaps to white text */
+    transform: translateY(-4px);
+    /* Subtle "lift" effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bg-color {
+    background-color: #A0F1BD;
+}
+
+.hero-padding {
+    padding: 7rem;
+    border-radius: 0 0 50px 50px;
+}
+
+.hero-title {
+    font-size: 5rem;
+}
+
+/* hero end*/
+
+
+
+/* Services start */
+.bg-card-color {
+    background-color: #D2F8DC;
+}
+
+.service-margin {
+    margin-top: 8rem;
+}
+
+.service-card {
+    padding: 5rem;
+}
+
+/* Services end */
+
+/* Testimonial */
+.testimonial-tab {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    /* Gives it that Figma card look */
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* Hover: Light green tint */
+.testimonial-tab:hover:not(.active) {
+    background-color: #1a4d2e;
+    color: #def1e4;
+}
+
+/* Active: The Dark Green state from your image */
+.testimonial-tab.active {
+    background-color: #1a4d2e !important;
+    border-bottom: none !important;
+}
+
+/* Make text white ONLY when active */
+.testimonial-tab.active h4,
+.testimonial-tab.active p {
+    color: white !important;
+}
+
+.testimonial-content {
+    display: none;
+    opacity: 0;
+}
+
+.testimonial-content.active {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Testimonial end */
+
+/* Smart fiance for everyone */
+.smart-finance {
+    padding: 3rem;
+
+}
+
+/* CTA SECTION */
+.cta-section {
+    padding: 12rem 2rem;
+    background-color: #F9F9F9;
+    ;
+}
+
+.cta-title {
+    font-size: 4rem;
+    text-decoration: underline;
+    line-height: 1.2;
+    max-width: 1100px;
+}
+
+/* CTA SECTION - end*/
+/* footer */
+footer a {
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.7;
+    color: #A0F1BD !important;
+    /* Light green tint from your hero */
+}
+
+/* footer-end */
+/* Smart fiance for everyone end*/
+
+@media (max-width: 768px) {
+
+
+    /* 1. Force the Navbar text to be smaller so it fits */
+    .navbar-brand a {
+        font-size: 1.2rem !important;
+    }
+
+    /* 2. Fix the button width (remove that 50% or 70% rule just for the nav button) */
+    .navbar .btn-primary-custom {
+        width: auto !important;
+        /* This prevents it from stretching weirdly */
+        padding: 8px 12px !important;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem !important;
+        /* Change from 5rem to something small */
+    }
+
+    .service-card h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .service-card p {
+        font-size: 1rem !important;
+        line-height: 1.5;
+    }
+
+    .service-card .d-flex {
+        justify-content: center !important;
+    }
+
+    .cta-section {
+        padding: 5rem 1.5rem;
+        /* Shrinks that massive 15rem gap */
+        background-color: #F9F9F9;
+        ;
+    }
+
+    .cta-title {
+        font-size: 2rem !important;
+        /* Half the size so it fits the screen */
+        text-decoration: underline;
+    }
+
+    footer {
+        min-height: auto !important;
+        /* Let content dictate height on phones */
+        padding-bottom: 3rem !important;
+    }
+
+    .btn-primary-custom {
+        padding: 12px 24px;
+        /* Give the button some "thumb" space */
+        font-size: 1rem;
+        width: auto;
+        /* Optional: Make button full-width on mobile */
+    }
+
+    .btn-primary-custom.fs-4 {
+        font-size: 1.2rem !important;
+        /* Scales down the button font */
+        width: auto;
+        /* Makes button easier to tap on phones */
+    }
+
+    h1,
+    .hero-title {
+        font-size: 2rem !important;
+    }
+
+    p {
+        font-size: 1.1rem
+    }
+
+
+    .hero-padding {
+        padding: 3rem 1.5rem;
+        /* Shrink the giant 7rem padding */
+    }
+
+}

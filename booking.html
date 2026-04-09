@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noble Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid bg-card-color min-vh-100 p-0 flex-column">
+        <!-- NAVBAR -->
+        <nav class="navbar bg-card-color py-3">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+                <!-- Logo: Reduced font-size for mobile -->
+                <div class="navbar-brand m-0">
+
+                    <a href="index.html" class="fs-4 fw-bold text-decoration-none">Noble Finances</a>
+
+                    <div id="office-status" class="fw-bold fs-5 rounded-4 mb-4 p-2 d-inline-block d-flex d-md-block">
+                        Checking office status....</div>
+                    </div>
+
+
+                <!-- Right Side -->
+                <div class="d-flex align-items-center gap-2">
+                    <!-- d-none hides this on mobile, d-md-block shows it on desktop -->
+                    <a href="learn-more.html" class="text-dark d-none d-md-block me-3 text-decoration-none">Services</a>
+
+                    <button class="btn-primary-custom px-3 py-2" style="font-size: 0.75rem; white-space: nowrap">
+                        Book appointment
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content (takes all extra space) -->
+
+        <main class="flex-grow-1 d-flex align-items-center bg-card-color px-4 py-5">
+            <div class="container-fluid">
+                <div class="row align-items-center gy-5">
+                    <!-- Clock Column -->
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="p-5 rounded-5" style="background-color: #a0f1bd">
+                            <img src="assests/images/clock.png" alt="Clock" class="img-fluid w-100" />
+                        </div>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h2 id="hero-title"></h2>
+
+                        <h1 class="display-4 fw-bold mb-3">
+                            Book an <br class="d-none d-lg-block" />
+                            appointment now
+                        </h1>
+                        <p class="fs-5 opacity-75 mb-4">
+                            Serving individuals and small businesses since 1987
+                        </p>
+                        <button class="btn-primary-custom px-5 py-3 fs-5 shadow-sm " data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Contact Us
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid bg-dark-green py-5 px-3 px-md-5" style="
+          border-radius: 40px 40px 0 0;
+          min-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        ">
+            <!-- Top Row: Logo & Button -->
+            <div class="row align-items-start gy-4">
+                <div class="col-md-6 col-12 text-center text-md-start">
+                    <h1 class="text-white fw-bold display-6">Noble Finances</h1>
+                </div>
+
+                <div
+                    class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-3 gap-md-4">
+                    <a href="learn-more.html" class="text-white text-decoration-line">Services</a>
+                    <a href="booking.html">
+                        <button class="btn-secondary-custom">Book An Appointment</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Tagline & Copyright -->
+            <div class="row align-items-end mt-auto gy-4 pt-5">
+                <div class="col-12 col-md-8 text-center text-md-start">
+                    <h5 class="text-white fw-bold mb-1">
+                        Financial Clarity You Can Trust
+                    </h5>
+                    <p class="text-white mb-0 opacity-75 small">
+                        Trusted financial guidance for every stage of life and business
+                        since 1987
+                    </p>
+                </div>
+                <div class="col-4 col-md-4 text-center text-md-end">
+                    <p class="text-white mb-0 opacity-75 small" id="copyright">
+                        © 2026 All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="assests/js/common.js"></script>
+    <script src="assests/js/booking.js"></script>
+</body>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-5 border-0 p-3">
+            <!-- //header -->
+            <div class="modal-header border-0 pb-0">
+                <h3 class="fw-bold">Book Your Session</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- body -->
+            <div class="modal-body">
+                <form id="appointmentForm">
+                    <!-- Name Input -->
+                     <div class="mb-3">
+                        <label class="form-label small fw-bold">Full Name</label>
+                         <input type="text" id="userName" class="form-control rounded-3" placeholder="Enter your name" required>
+                     </div>
+                    <!-- email Input -->
+                     <div class="mb-3">
+                        <label class="form-label small fw-bold">Email</label>
+                         <input type="email" id="userEmail" class="form-control rounded-3" placeholder="Enter your email" >
+                     </div>
+                    <!-- submit Input -->
+                     <button type="submit" class="btn-primary-custom w-100 py-3 mt-2">
+                         Confirm Booking
+                     </button>
+                </form>
+
+                <div id="successMsg" class="d-none text-center py-4">
+                    <h1 class="display-4 text-success">✔</h1>
+                    <h4 class="fw-bold">Request Sent!</h4>
+                    <p class="text-muted">We'll contact you shortly.</p>
+                </div>
+
+            </div>
+        
+
+        </div>
+    </div>
+</div>
+
+</html>
