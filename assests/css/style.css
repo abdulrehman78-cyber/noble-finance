@@ -1,15 +1,20 @@
 * {
     font-family: "DM Sans", sans-serif;
     color: #2E4F21;
+    box-sizing: border-box !important;
 }
 html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
 }
-body{
-    overflow-x: hidden ;
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
+
+
 h1 {
     font-size: 3.5rem;
 }
@@ -240,6 +245,8 @@ footer a:hover {
         font-size: 2rem !important;
         /* Half the size so it fits the screen */
         text-decoration: underline;
+         word-wrap: break-word;
+    overflow-wrap: break-word;
     }
 
     footer {
